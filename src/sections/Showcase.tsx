@@ -3,10 +3,12 @@ import { useGridColumns } from "../hooks/useGridColumns"
 
 const Showcase = () => {
   const columns = useGridColumns();
-  const itemsToShow = columns * 3; // regla que pediste
+  const itemsToShow = columns * 3; 
 
   return (
-    <section className="w-screen min-h-screen bg-[#0169a2] text-white px-4 py-10 flex justify-center">
+    <section 
+      id="products"
+      className="w-screen min-h-screen bg-[#0169a2] text-white px-4 py-10 flex justify-center">
       <div
         className="
           grid

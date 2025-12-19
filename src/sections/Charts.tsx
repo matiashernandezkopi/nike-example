@@ -70,6 +70,7 @@ export default function Charts() {
   return (
     <section
       ref={sectionRef}
+      id="stats"
       className="w-full py-20 px-6 md:px-16 bg-white mt-10 rounded-3xl shadow-lg"
     >
       <h2 className="text-4xl font-bold text-gray-800 mb-10 text-center">
