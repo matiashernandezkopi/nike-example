@@ -140,7 +140,7 @@ function App() {
 
         <button
           id="menu-btn"
-          className="md:hidden text-3xl focus:outline-none hover:text-[#0077ff] transition-colors duration-500 hover:cursor-pointer"
+          className="md:hidden text-3xl focus:outline-none hover:text-[#0077ff] transition-colors duration-500 cursor-pointer"
         >
           ☰
         </button>
@@ -149,7 +149,7 @@ function App() {
           id="mobile-menu"
           className=" z-50 fixed top-0 -right-full h-screen w-2/3 bg-white shadow-lg p-6 flex flex-col gap-6 text-lg font-medium md:hidden"
         >
-          <button id="close-menu" className="text-3xl mb-4 text-gray-700 hover:cursor-pointer">×</button>
+          <button id="close-menu" className="text-3xl mb-4 text-gray-700 cursor-pointer">×</button>
 
           <a href="#products" className=" border-b pb-2 hover:border-[#0077ff] transition-colors duration-500 hover:text-[#0077ff]">Product</a>
           <a href="#stats" className=" border-b pb-2 hover:border-[#0077ff] transition-colors duration-500 hover:text-[#0077ff]">Stats</a>
@@ -174,7 +174,7 @@ function App() {
         onClose={() => setLoginOpen(false)}
       />
 
-      <Main />
+      <Main openLogin={() => setLoginOpen(true)}/>
 
       <Marquee
         items={["choose", "your", "style", "choose", "your", "style", "choose", "your", "style", "choose", "your", "style"]}

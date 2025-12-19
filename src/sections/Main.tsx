@@ -2,7 +2,7 @@ import { useGSAP } from "@gsap/react";
 import gsap from "gsap";
 import RSideHome from "../components/RSideHome";
 
-const Main = () => {
+const Main = ({openLogin}: {openLogin: () => void}) => {
   useGSAP(() => {
     gsap.from("#hero-text", { xPercent: -20, opacity: 0 })
   });
@@ -18,10 +18,16 @@ const Main = () => {
         </p>
 
         <div className="flex gap-4 pt-4">
-          <button className="bg-black text-white px-6 py-2 rounded-full font-semibold shadow hover:scale-105 transition">
+          <button
+            onClick={openLogin} 
+            className="bg-black text-white px-6 py-2 rounded-full font-semibold shadow hover:scale-105 transition cursor-pointer"
+          >
             LOGIN
           </button>
-          <button className="border border-[#3ba4ff] text-[#3ba4ff] px-6 py-2 rounded-full font-semibold hover:bg-[#3ba4ff] hover:text-white transition">
+          <button 
+            onClick={openLogin} 
+            className="border border-[#3ba4ff] text-[#3ba4ff] px-6 py-2 rounded-full font-semibold hover:bg-[#3ba4ff] hover:text-white transition cursor-pointer"
+          >
             START TRIAL
           </button>
         </div>

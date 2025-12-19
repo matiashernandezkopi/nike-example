@@ -173,7 +173,7 @@ export default function LoginModal({ isOpen, onClose }: LoginModalProps) {
                     <div className="auth-tabs flex bg-gray-100 rounded-full p-1 mb-6">
                         <button
                             onClick={() => setMode("login")}
-                            className={`flex-1 py-2 rounded-full text-sm font-medium transition hover:cursor-pointer
+                            className={`flex-1 py-2 rounded-full text-sm font-medium transition cursor-pointer
                             ${mode === "login" ? "bg-white shadow" : "text-gray-500"}
                             `}
                         >
@@ -181,7 +181,7 @@ export default function LoginModal({ isOpen, onClose }: LoginModalProps) {
                         </button>
                         <button
                             onClick={() => setMode("signup")}
-                            className={`flex-1 py-2 rounded-full text-sm font-medium transition hover:cursor-pointer
+                            className={`flex-1 py-2 rounded-full text-sm font-medium transition cursor-pointer
                             ${mode === "signup" ? "bg-white shadow" : "text-gray-500"}
                             `}
                         >
@@ -222,7 +222,7 @@ export default function LoginModal({ isOpen, onClose }: LoginModalProps) {
 
                         <button
                             type="submit"
-                            className="submit-btn opacity-0 w-full bg-blue-600 hover:bg-blue-700 active:scale-[0.98] transition-[background-color,transform]duration-200 text-white py-3 rounded-lg font-semibold hover:cursor-pointer"
+                            className="submit-btn opacity-0 w-full bg-blue-600 hover:bg-blue-700 active:scale-[0.98] transition-[background-color,transform]duration-200 text-white py-3 rounded-lg font-semibold cursor-pointer"
                         >
                             {mode === "login" ? "Login" : "Create account"}
                         </button>
