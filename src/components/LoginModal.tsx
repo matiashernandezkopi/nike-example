@@ -154,7 +154,7 @@ export default function LoginModal({ isOpen, onClose }: LoginModalProps) {
 
                     <button
                         onClick={onClose}
-                        className="absolute top-4 right-4 text-gray-400 hover:text-black text-xl transition"
+                        className="absolute top-4 right-4 text-gray-400 hover:text-black text-xl transition cursor-pointer"
                     >
                         ×
                     </button>
